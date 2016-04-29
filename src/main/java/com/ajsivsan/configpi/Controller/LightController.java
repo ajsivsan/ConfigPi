@@ -16,6 +16,8 @@ public class LightController {
 	public String home(){
 		return "Welcomd to ConfigPi";
 	}
+	
+	@RequestMapping("/toggle")
 	public String light(){
 		if(pin == null){
 			GpioController gpio = GpioFactory.getInstance();
